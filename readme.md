@@ -17,3 +17,10 @@ curl localhost:8500/v1/catalog/services
 
 consul catalog nodes -service nginx
 consul catalog nodes -detailed
+
+apk add nginx
+
+mkdir /usr/share/nginx/html -p
+vim /etc/nginx/conf.d/default.conf
+    root /usr/share/nginx/html;
+vim /usr/share/nginx/html/index.html
