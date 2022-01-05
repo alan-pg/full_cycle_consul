@@ -6,5 +6,7 @@
     "retry_join": [
         "172.23.0.5",
         "172.23.0.4"
-    ]
+    ],
+    "node_name": "consulserver03",
+    "encrypt": "+frZ8Uu59Q9DNa/0O39Zw3ltfAyMkXVi3khNSR0DUbg="
 }
