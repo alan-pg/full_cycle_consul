@@ -24,3 +24,5 @@ mkdir /usr/share/nginx/html -p
 vim /etc/nginx/conf.d/default.conf
     root /usr/share/nginx/html;
 vim /usr/share/nginx/html/index.html
+
+consul agent -config-dir=/etc/consul.d
