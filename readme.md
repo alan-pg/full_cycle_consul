@@ -7,6 +7,8 @@ consul agent -server -bootstrap-expect=3 -node=consulserver01 -bind=172.23.0.1 -
 #client
 consul agent -bind=172.23.0.5 -data-dir=/var/lib/consul -config-dir=/etc/consul.d
 
+consul agent -bind=172.23.0.5 -data-dir=/var/lib/consul -config-dir=/etc/consul.d --retry-join=172.23.0.1 --retry-join=172.23.0.2
+
 apk -U add bind-tools
 dig @localhost -p 8600 SRV
 dig @localhost -p 8600 nginx.service.consul
