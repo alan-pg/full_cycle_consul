@@ -28,3 +28,5 @@ vim /usr/share/nginx/html/index.html
 consul agent -config-dir=/etc/consul.d
 
 consul keygen
+
+http://localhost:8500/ui
